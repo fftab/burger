@@ -13,6 +13,7 @@ var burger = {
     });
   },
   update: function (objColVals, condition, cb) {
+    // condition = devoured status?
     orm.update("burgers", objColVals, condition, function (res) {
       cb(res);
     });

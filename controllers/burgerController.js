@@ -12,10 +12,11 @@ router.get("/", function(req, res) {
         };
         console.log(hbsObject);
         res.render("index", hbsObject);
-    })
+    });
 });
 
 router.post("/api/burgers", function(req, res) {
+    // Key/Value Pairs are passed in as two separate arrays
     burger.create([
         "burger_name", "devoured"
     ], [
