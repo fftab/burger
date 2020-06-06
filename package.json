@@ -1,0 +1,25 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "A burger-creating and burger-devouring app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fftab/burger.git"
+  },
+  "author": "sailor_daria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fftab/burger/issues"
+  },
+  "homepage": "https://github.com/fftab/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}

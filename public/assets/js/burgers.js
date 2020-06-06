@@ -1,4 +1,4 @@
-// 
+// Event Listeners
 $(function() {
     $(".change-devour").on("click", function(event) {
         var id = $(this).data("id");
@@ -8,7 +8,7 @@ $(function() {
             devoured: newDevoured
         };
 
-        $.ajax(`/api/cats/${id}`, {
+        $.ajax(`/api/burgers/${id}`, {
             type: "PUT",
             data: newDevouredState
         }).then(
@@ -24,7 +24,7 @@ $(function() {
         event.preventDefault();
 
         var newBurger = {
-            name: 14("#ca").val().trim(),
+            name: $("#ca").val().trim(),
             devoured: $("[name=devoured]:checked").val().trim() 
         };
 
@@ -33,7 +33,7 @@ $(function() {
             data: newBurger
         }).then(
             function() {
-                console.log("Created new burger");
+                console.log("Created a new burger");
                 location.reload();
             }
         );
@@ -46,9 +46,9 @@ $(function() {
             type: "DELETE"
         }).then(
             function() {
-                console.log ("deleted burger", id);
+                console.log ("Deleted burger", id);
                 location.reload();
             }
         );
-    }); 
+    });
 });
