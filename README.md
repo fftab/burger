@@ -4,7 +4,7 @@
 [![fork this repo](https://githubbadges.com/fork.svg?user=fftab&repo=READMEGenerator&style=default)](https://github.com/fftab/READMEGenerator/fork)
 ## Description
 
-The Burger App demonstrates the usage of an ORM file and Handlebars files for Front-End (as opposed to HTML). It also demonstrated the MVC file structure.
+The Burger App demonstrates the usage of an ORM file and Handlebars files for Front-End (as opposed to HTML). It also demonstrates the MVC file structure.
 
 ## Table of Contents
 
